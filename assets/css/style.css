@@ -32,42 +32,41 @@ body {
 }
 /*=== 3. Text Outside the Box ===*/
 .etc-login-form {
-  color: #919191;
+  color: #424242;
   padding: 0px 20px;
 }
 .etc-login-form p {
   margin-bottom: 5px;
 }
 .login-form-1 .form-control {
-  border: 0;
+  /* border: 0; */
   background: transparent;
+  margin-bottom: 0.2rem;
   color: #333333;
-  padding: 7px 0;
+  padding: 0.2em 0.5em;
   font-size: 1.5rem !important;
   height:auto;
 }
+
 .login-form-1 .form-control::-webkit-input-placeholder {
-  color: #333333;
+  color: #707070;
   font-size: 1.5rem !important;
 }
 .login-form-1 .form-control:-moz-placeholder,
 .login-form-1 .form-control::-moz-placeholder,
 .login-form-1 .form-control:-ms-input-placeholder {
-  color: #333333;
+  color: #707070;
   font-size: 1.5rem !important;
 }
 .login-form-1 .form-group {
   margin-bottom: 0;
-  border-bottom: 2px solid #efefef;
   padding-right: 20px;
   position: relative;
 }
-.login-form-1 .form-group:last-child {
-  border-bottom: 0;
-}
+
 .login-group {
   color: #333333;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 /*=== 5. Login Button ===*/
 .login-form-1 .login-button {
