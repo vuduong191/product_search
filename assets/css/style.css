@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html { 
+  position: relative;
+  background: url(../imgs/bg/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  /* Typography */
+  background: none;
+  font-family: 'Big Shoulders Display';  
+}
+.no-background {
+  background-color:transparent;
+}
+#search_card {
+  background: rgba(255, 255, 255, 0.8);
+}
+.left-icon {
+  margin: auto;
+}
+.login-form-1 {
+  max-width: 80%;
+}
+.main-login-form {
+  position: relative;
+}
+/*=== 3. Text Outside the Box ===*/
+.etc-login-form {
+  color: #919191;
+  padding: 0px 20px;
+}
+.etc-login-form p {
+  margin-bottom: 5px;
+}
+.login-form-1 .form-control {
+  border: 0;
+  background: transparent;
+  color: #333333;
+  padding: 7px 0;
+  font-size: 1.5rem !important;
+  height:auto;
+}
+.login-form-1 .form-control::-webkit-input-placeholder {
+  color: #333333;
+  font-size: 1.5rem !important;
+}
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+  color: #333333;
+  font-size: 1.5rem !important;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 2px solid #efefef;
+  padding-right: 20px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  color: #333333;
+  padding: 10px 20px;
+}
+/*=== 5. Login Button ===*/
+.login-form-1 .login-button {
+  position: absolute;
+  color:   #fda925;
+  right: -25px;
+  top: 50%;
+  font-size: 1.6em;
+  width: 2em;
+  height:  2em;
+  margin-top: -25px;
+  border: 5px solid #efefef;
+  border-radius: 50%;
+  transition: all ease-in-out 500ms;
+}
+.login-form-1 .login-button:hover {
+  color: #555555;
+  transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked {
+  color: #555555;
+  transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked:hover {
+  transform: none;
+}
+/* .login-form-1 .login-button i {
+  position: relative;
+  bottom: 4px;
+} */
+.fa_icon_category {
+  width: 2em;
+  display: inline-block;
+}
+.category-text{
+  font-size: 1.5em;
+  position: relative;
+  bottom: -0.3em;
+}
+.category-hr{
+  margin-top:0.2em
+}
+.table td, .table th {
+  padding:0.25rem;
+}

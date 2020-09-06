@@ -1,0 +1,230 @@
+<!-- Media Query Demo (check the CSS page) -->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Big+Shoulders+Display' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+    <div class="container">
+      <div class="row mb-3 mt-5">
+        <div class="col-md-2 .col-sm-1"></div>
+        <div class="col-md-8 .col-sm-10">
+          <div class="card" id="search_card">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <h1>Nhập mã sản phẩm và email để tìm kiếm</h1>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center">
+                  <img src="assets/imgs/search_icon.png" alt="search" width="60%" class="left-icon">
+                </div>
+                <div class="col-sm-8">
+                  <div class="login-form-1">
+                    <form id="login-form" class="text-left">
+                      <div class="login-form-main-message"></div>
+                      <div class="main-login-form">
+                        <div class="login-group">
+                          <div class="form-group">
+                            <label for="product_id" class="sr-only">Mã Sản phẩm</label>
+                            <input type="text" class="form-control" id="product_id" name="product_id" placeholder="Mã Sản phẩm">
+                          </div>
+                          <div class="form-group">
+                            <label for="verified_email" class="sr-only">Email</label>
+                            <input type="text" class="form-control" id="verified_email" name="verified_email" placeholder="Email">
+                          </div>                     
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-search"></i></button>
+                      </div>
+                    </form>
+                    <div class="etc-login-form">
+                      <p>Mã xác nhận sẽ được gửi qua email. Bạn cần mã này để tiếp tục.</p>
+                    </div>                         
+                    <form id="login-form" class="text-left">
+                      <div class="login-form-main-message"></div>
+                      <div class="main-login-form">
+                        <div class="login-group">
+                          <div class="form-group">
+                            <label for="verified_code" class="sr-only">Code</label>
+                            <input type="text" class="form-control" id="verified_code" name="verified_code" placeholder="Verification Code">
+                          </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                      </div>
+                    </form>                  
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 .col-sm-1"></div>      
+      </div>
+      <div class="row mb-3 mt-5">
+        <div class="col-md-2 .col-sm-1"></div>
+        <div class="col-md-8 .col-sm-10">
+          <div class="card" id="search_card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center">
+                  <img src="assets/imgs/not_found.png" alt="search" width="50%" class="left-icon">
+                </div>
+                <div class="col-sm-8 m-0">
+                  <h1>Không tìm thấy sản phẩm. Vui lòng thử lại hoặc liên hệ Mia.</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 .col-sm-1"></div>      
+      </div>    
+      <div class="row mb-3 mt-5">
+        <div class="col-md-2 .col-sm-1"></div>
+        <div class="col-md-8 .col-sm-10">
+          <div class="card" id="search_card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center">
+                  <img src="assets/imgs/thankyou.png" alt="search" width="50%" class="left-icon">
+                </div>
+                <div class="col-sm-8 m-0">
+                  <h1>Cám ơn bạn đã tin tưởng Mia! Thông tin sản phẩm ở bên dưới!</h1>
+                  <div class="etc-login-form">
+                    <p>Vui lòng liên hệ Mia nếu thông tin không trùng khớp.</p>
+                  </div>                    
+                </div>
+              </div>
+              <!-- Thong tin san pham -->
+              <div class="row info-block">
+                <div class="col-sm-12 ">
+                  <div class="fa_icon_category">
+                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
+                  </div>
+                  <span class="category-text">Thông tin sản phẩm</span>
+                  <hr class="category-hr"/>
+                </div>
+
+              </div>
+              <div class="row ml-1">
+                <div class="col-sm-12 col-md-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th colspan="2"><strong>Energy Drink - Franks Original</strong></th>
+                      </tr>
+                      <tr>
+                        <th>Thương hiệu:</th>
+                        <td>Allopurinol</td>
+                      </tr>
+                      <tr>
+                        <th>Mô tả:</th>
+                        <td>Toxic effect of chewing tobacco, accidental (unintentional), sequela</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 col-md-6 image-galerry-col">
+                  <img src="assets/imgs/screenshot-2.jpg" alt="search_icon" width="100%">
+                </div>                
+              </div>     
+              <!-- Thong tin nhap hang -->
+              <div class="row info-block">
+                <div class="col-sm-12 ">
+                  <div class="fa_icon_category">
+                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
+                  </div>
+                  <span class="category-text">Nhập hàng</span>
+                  <hr class="category-hr"/>
+                </div>
+
+              </div>
+              <div class="row ml-1">
+                <div class="col-sm-12 col-md-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th>Mua tại:</th>
+                        <td>Target</td>
+                      </tr>
+                      <tr>
+                        <th>Số hóa đơn:</th>
+                        <td>010202</td>
+                      </tr>
+                      <tr>
+                        <th>Ngày nhập:</th>
+                        <td>12 Tháng 5 Năm 2020</td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 col-md-6 image-galerry-col">
+                  <img src="assets/imgs/screenshot-2.jpg" alt="search_icon" width="100%">
+                </div>                
+              </div>     
+              <!-- Thong tin van chuyen-->
+              <div class="row info-block">
+                <div class="col-sm-12 ">
+                  <div class="fa_icon_category">
+                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
+                  </div>
+                  <span class="category-text">Vận chuyển</span>
+                  <hr class="category-hr"/>
+                </div>
+
+              </div>
+              <div class="row ml-1">
+                <div class="col-sm-12 col-md-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th>Chuyển từ:</th>
+                        <td>California, US</td>
+                      </tr>
+                      <tr>
+                        <th>Ngày chuyển:</th>
+                        <td>13 Tháng 5 Năm 2020</td>
+                      </tr>
+                      <tr>
+                        <th>Chuyển đến:</th>
+                        <td>Tp. Hồ Chí Minh</td>
+                      </tr> 
+                      <tr>
+                        <th>Ngày đến:</th>
+                        <td>17 Tháng 5 Năm 2020</td>
+                      </tr>                                            
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 col-md-6 image-galerry-col">
+                  <img src="assets/imgs/screenshot-2.jpg" alt="search_icon" width="100%">
+                </div>                
+              </div>                                   
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 .col-sm-1"></div>      
+      </div>          
+    </div>  
+
+</body>
+
+</html>
