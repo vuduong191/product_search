@@ -55,21 +55,43 @@
                     </form>
                     <div class="etc-login-form">
                       <p>Mã xác nhận sẽ được gửi qua email. Bạn cần mã này để tiếp tục.</p>
-                    </div>                         
+                    </div>                                                             
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 .col-sm-1"></div>      
+      </div>
+      <!-- verification -->
+      <div class="row mb-3 mt-5">
+        <div class="col-md-2 .col-sm-1"></div>
+        <div class="col-md-8 .col-sm-10">
+          <div class="card" id="search_card">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <h1>Điền mã xác nhận để tiếp tục</h1>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 d-flex justify-content-center">
+                  <img src="assets/imgs/search_icon.png" alt="search" width="60%" class="left-icon">
+                </div>
+                <div class="col-sm-8">
+                  <div class="login-form-1">                       
                     <form id="login-form" class="text-left">
                       <div class="login-form-main-message"></div>
                       <div class="main-login-form">
                         <div class="login-group">
                           <div class="form-group">
                             <label for="verified_code" class="sr-only">Code</label>
-                            <input type="text" class="form-control" id="verified_code" name="verified_code" placeholder="verification code">
+                            <input type="text" class="form-control" id="verified_code" name="verified_code" placeholder="Mã xác nhận">
                           </div>
                         </div>
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
                       </div>
                     </form> 
                     <div class="etc-login-form">
-                      <p><span>Điền mã xác nhận để tiếp tục</span></p>
                       <p>Không nhận được! <a href="#">Gửi lại</a></p>
                     </div>                                       
                   </div>
@@ -83,6 +105,7 @@
         </div>
         <div class="col-md-2 .col-sm-1"></div>      
       </div>
+            <!-- Done verification -->
       <div class="row mb-3 mt-5">
         <div class="col-md-2 .col-sm-1"></div>
         <div class="col-md-8 .col-sm-10">
@@ -117,12 +140,14 @@
                   </div>                    
                 </div>
               </div>
+              
               <!-- Thong tin san pham -->
               <div class="row info-block">
                 <div class="col-sm-12 ">
-                  <div class="fa_icon_category">
-                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
-                  </div>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x category-icon-bg"></i>
+                    <i class="fa fa-flag fa-stack-1x category-icon-inside"></i>
+                  </span> 
                   <span class="category-text">Thông tin sản phẩm</span>
                   <hr class="category-hr"/>
                 </div>
@@ -153,9 +178,10 @@
               <!-- Thong tin nhap hang -->
               <div class="row info-block">
                 <div class="col-sm-12 ">
-                  <div class="fa_icon_category">
-                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
-                  </div>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x category-icon-bg"></i>
+                    <i class="fa fa-truck fa-stack-1x category-icon-inside"></i>
+                  </span> 
                   <span class="category-text">Nhập hàng</span>
                   <hr class="category-hr"/>
                 </div>
@@ -187,9 +213,10 @@
               <!-- Thong tin van chuyen-->
               <div class="row info-block">
                 <div class="col-sm-12 ">
-                  <div class="fa_icon_category">
-                    <img src="assets/imgs/palmtree.png" alt="search_icon" width="100%">
-                  </div>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x category-icon-bg"></i>
+                    <i class="fa fa-plane fa-stack-1x category-icon-inside"></i>
+                  </span> 
                   <span class="category-text">Vận chuyển</span>
                   <hr class="category-hr"/>
                 </div>
@@ -221,7 +248,45 @@
                 <div class="col-sm-12 col-md-6 image-galerry-col">
                   <img src="assets/imgs/screenshot-2.jpg" alt="search_icon" width="100%">
                 </div>                
-              </div>                                   
+              </div> 
+              <!-- Lich su tim kiem -->
+              <div class="row info-block">
+                <div class="col-sm-12 ">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x category-icon-bg"></i>
+                    <i class="fa fa-search fa-stack-1x category-icon-inside"></i>
+                  </span> 
+                  <span class="category-text">Lịch sử tìm kiếm</span>
+                  <hr class="category-hr"/>
+                </div>
+
+              </div>
+              <div class="row ml-1">
+                <div class="col-sm-12">
+                  <p>
+                    Đây là lần thứ 2 sản phẩm này được tìm kiếm
+                  </p>
+                  <p>Lược tìm kiếm:</p>
+                  <table class="table search-history-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Ngày</th>
+                        <th scope="col">Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>16/02/2020</td>
+                        <td>test1@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>23/02/2020</td>
+                        <td>test2@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>               
+              </div>                                                  
             </div>
           </div>
         </div>

@@ -97,9 +97,11 @@ body {
   position: relative;
   bottom: 4px;
 } */
-.fa_icon_category {
-  width: 2em;
-  display: inline-block;
+.category-icon-bg {
+  color:rgb(202, 202, 202)
+}
+.category-icon-inside {
+  color:#e77322
 }
 .category-text{
   font-size: 1.5em;
@@ -111,4 +113,11 @@ body {
 }
 .table td, .table th {
   padding:0.25rem;
+}
+.search-history-table {
+  margin:auto;
+  max-width: 400px;
+}
+table.search-history-table thead tr th {
+  border-top: none;
 }
