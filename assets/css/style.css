@@ -16,7 +16,9 @@ body {
   font-family: 'Roboto';  
 }
 .block-title {
-    font-family: 'Big Shoulders Display'
+    font-family: 'Big Shoulders Display';
+    margin-top:0.2em;
+    margin-bottom:0.2em
 }
 .no-background {
   background-color:transparent;
@@ -26,6 +28,7 @@ body {
 }
 .left-icon {
   margin: auto;
+  max-width: 200px;
 }
 .login-form-1 {
   max-width: 80%;
