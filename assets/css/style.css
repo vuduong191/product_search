@@ -13,7 +13,10 @@ html {
 body {
   /* Typography */
   background: none;
-  font-family: 'Big Shoulders Display';  
+  font-family: 'Roboto';  
+}
+.block-title {
+    font-family: 'Big Shoulders Display'
 }
 .no-background {
   background-color:transparent;
@@ -44,19 +47,19 @@ body {
   margin-bottom: 0.2rem;
   color: #333333;
   padding: 0.2em 0.5em;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
   height:auto;
 }
 
 .login-form-1 .form-control::-webkit-input-placeholder {
   color: #707070;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 .login-form-1 .form-control:-moz-placeholder,
 .login-form-1 .form-control::-moz-placeholder,
 .login-form-1 .form-control:-ms-input-placeholder {
   color: #707070;
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 .login-form-1 .form-group {
   margin-bottom: 0;

@@ -16,7 +16,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Big+Shoulders+Display' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Roboto|Montserrat' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -29,7 +29,7 @@
           <div class="card" id="search_card">
             <div class="card-body">
               <div class="row justify-content-center">
-                <h1>Nhập mã sản phẩm và email để tìm kiếm</h1>
+                <h1 class="block-title">Nhập mã sản phẩm và email để tìm kiếm</h1>
               </div>
               <div class="row">
                 <div class="col-sm-4 d-flex justify-content-center">
@@ -71,7 +71,7 @@
           <div class="card" id="search_card">
             <div class="card-body">
               <div class="row justify-content-center">
-                <h1>Điền mã xác nhận để tiếp tục</h1>
+                <h1 class="block-title">Điền mã xác nhận để tiếp tục</h1>
               </div>
               <div class="row">
                 <div class="col-sm-4 d-flex justify-content-center">
@@ -91,6 +91,9 @@
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
                       </div>
                     </form> 
+                    <div class="etc-login-form">
+                      <p class="text-danger">Mã xác nhận không đúng. Xin thử lại!</p>
+                    </div>                     
                     <div class="etc-login-form">
                       <p>Không nhận được! <a href="#">Gửi lại</a></p>
                     </div>                                       
@@ -116,7 +119,8 @@
                   <img src="assets/imgs/not_found.png" alt="search" width="50%" class="left-icon">
                 </div>
                 <div class="col-sm-8 m-0">
-                  <h1>Không tìm thấy sản phẩm. Vui lòng thử lại hoặc liên hệ Mia.</h1>
+                  <h1 class="block-title">Không tìm thấy sản phẩm</h1>
+                  <p class="text-muted">Vui lòng thử lại hoặc liên hệ Mia qua Facebook page để được hỗ trợ.</p>               
                 </div>
               </div>
             </div>
@@ -134,10 +138,8 @@
                   <img src="assets/imgs/thankyou.png" alt="search" width="50%" class="left-icon">
                 </div>
                 <div class="col-sm-8 m-0">
-                  <h1>Cám ơn bạn đã tin tưởng Mia! Thông tin sản phẩm ở bên dưới!</h1>
-                  <div class="etc-login-form">
-                    <p>Vui lòng liên hệ Mia nếu thông tin không trùng khớp.</p>
-                  </div>                    
+                  <h1 class="block-title">Cám ơn bạn đã tin tưởng Mia! Thông tin sản phẩm ở bên dưới!</h1>
+                  <p class="text-muted">Vui lòng liên hệ Mia nếu thông tin không trùng khớp.</p>
                 </div>
               </div>
               
@@ -266,7 +268,7 @@
                   <p>
                     Đây là lần thứ 2 sản phẩm này được tìm kiếm
                   </p>
-                  <p>Lược tìm kiếm:</p>
+                  <p>Lược tìm kiếm gần nhất (hiển thị tối đa 5 lược):</p>
                   <table class="table search-history-table">
                     <thead>
                       <tr>
